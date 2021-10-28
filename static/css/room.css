@@ -1,8 +1,27 @@
 html,body{
   width:100%;
   height:100%;
+  margin:0;
+  padding:0;
+ overflow-x:hidden;
+}
+#starting_page{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+#message-field{
+  display:none;
+}
+#name_enter{
+  z-index: 1;
 }
 .message-field{
+  width:100%;
+  margin:0;
+  padding:0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,41 +30,143 @@ html,body{
 #message{
   border-radius: 10px;
   outline: none;
-  border-color: blueviolet;
-  width:200%;
+  width:40%;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+#message_taker{
+  display: none;
+}
+#send_message{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.plane{
+  color:#0dcaf0;
+  transform: scale(1.5);
+}
+.send-button{
+  border-radius:50%;
+  border:none;
+  background: none;
+}
+.send-button:hover{
+  border:none;
+  background: none;
+}
+.send-button:focus{
+  border:none;
+  background: none;
+  transition: none;
+}
+
+#User_Joined{
+    width:1000px;
+    /* color:#ED2939; */
+    color:black;
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
+    text-overflow: ellipsis; 
+    overflow:hidden;
+    white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  
+}
+#disconnected{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
 }
 #text_block{
-  display:flex;
+  display:table;
   flex-direction: column;
   grid-gap:5%;
     width:100%;
-    height:80%;
-    color:black;
+    height:75vh;
+    color:rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     
 }
 #room-detail{
+  background-color: #dcf8c6;
+  display:flex;
+  flex-direction: row;
   width:100%;
-  color:white;
+  padding:1%;
+  margin:0;
+  gap:2%;
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+}
+.group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:1%;
+  
 }
 .roomName{
-  color:white;
-  font-family: 'Days One', sans-serif;
+  font-weight: bolder;
+  font-family: 'Varela Round', sans-serif;
 }
 .message_sender{
   display:flex;
   align-items: center;
   justify-content: center;
   width:100%;
-  
   height:20%;
-  position:fixed;
-  bottom:0;
 }
 
 body{
-  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../best-chatbot.png");
+  background-color: #075e54;
+  /* background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../best-chatbot.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.input{
+  width:180%;
+}
+.custom-shape-divider-bottom-1634822811 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+}
+
+.custom-shape-divider-bottom-1634822811 svg {
+  position: relative;
+  display: block;
+  width: calc(202% + 1.3px);
+  height: 383px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1634822811 .shape-fill {
+  fill: #b5bf50;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1634822811 svg {
+      width: calc(132% + 1.3px);
+      height: 408px;
+  }
+}
+@media (max-width: 800px){
+  #message{
+    width:60%;
+  }
+}
+@media (max-width: 500px){
+  #message{
+    width:80%;
+  }
 }
