@@ -1,5 +1,5 @@
 
-const socket=io.connect("http://localhost:3000/")
+const socket=io.connect("https://chatterwebapp.herokuapp.com/")
 let message_sender=document.getElementById("send_message");
 let messageInput=document.getElementById("message");
 let message_container=document.getElementById("text_block")
