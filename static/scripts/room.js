@@ -1,6 +1,5 @@
 
 const socket=io.connect("https://chatterwebapp.herokuapp.com/")
-var socket =io.connect('url', { "forceBase64" : 1 });
 let message_sender=document.getElementById("send_message");
 let messageInput=document.getElementById("message");
 let message_container=document.getElementById("text_block")
