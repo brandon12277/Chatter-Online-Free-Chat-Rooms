@@ -31,6 +31,7 @@ let names_map=[];
 socket.on("user_connected",(names)=>{
     // displayName(names,"joined","left","#ece5dd","#ED2939")
     displayName(names);
+    user_disconnected(names,"connected","center","#90EE90","#ED2939");
     socket.emit("user_display",user,roomName);
 })
 socket.on("user_add",(names)=>{
@@ -41,7 +42,7 @@ socket.on("user_add",(names)=>{
   }
 })
 socket.on("user-disconnected",(name,names)=>{
-   user_disconnected(name,"disconnected","center","white","#ED2939");
+   user_disconnected(name,"disconnected","center","#90EE90","#ED2939");
    users.innerText="";
   displayName("You");
   for(var i=0;i<names.length;i++){
