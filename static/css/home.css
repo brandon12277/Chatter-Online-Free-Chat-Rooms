@@ -96,8 +96,8 @@ html,body{
 
 }
 .custom-shape-divider-bottom-1634822811 {
-    position: absolute;
-    /* bottom: 0; */
+    position: fixed;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
