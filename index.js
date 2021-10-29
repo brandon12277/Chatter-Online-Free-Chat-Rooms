@@ -5,7 +5,7 @@ const app=express();
 
 const server = require('http').createServer(app);
 const {Server}= require("socket.io")
-const port=process.env.PORT || 3000 || 8443;
+const port=3000;
 const io = new Server(server,{
     cors:{
     origin:"https://chatterwebapp.herokuapp.com/",
@@ -116,4 +116,4 @@ function ReturnUsertRooms(socket){
     
 }
 
-server.listen(8443,()=>{ console.log('server started');});
+server.listen(port,()=>{ console.log('server started');});
