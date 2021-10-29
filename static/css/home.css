@@ -1,14 +1,20 @@
 html,body{
     width:100%;
     height:100%;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../best-chatbot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding:0;
+    
 }
 .home{
     width:100%;
     height:100%;
-    background-color: #4daa74;
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../best-chatbot.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
+    padding:0;
+    
 }
 .logo{
   width:20%;
@@ -91,11 +97,13 @@ html,body{
 }
 .custom-shape-divider-bottom-1634822811 {
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    margin: 0;
+    padding:0;
     transform: rotate(180deg);
 
 }
@@ -120,6 +128,7 @@ html,body{
     }
 }
 .footer{
+    width:100%;
     z-index:1;
     position: absolute;
     bottom:0;
@@ -128,7 +137,8 @@ html,body{
     align-items: center;
     justify-content: center;
     margin-top: 5%;
-    color:white;
+    color:black;
+   
     font-family: 'Montserrat Alternates', sans-serif;
   
 }
@@ -137,7 +147,7 @@ html,body{
     align-items: center;
     justify-content: center;
     width:100%;
-    grid-gap:5%;
+    grid-gap:1%;
 }
 .create-join{
     width:100%;
@@ -145,6 +155,9 @@ html,body{
     align-items: center;
     justify-content: center;
     gap:2%;
+}
+.fab{
+    color:aquamarine
 }
 /** For mobile devices **/
 @media (max-width: 1100px){
@@ -176,6 +189,7 @@ html,body{
         align-items: center;
         justify-content: center;
         gap:2%;
+        margin-top: 4%;
     }
     .description{
         width:90%;
@@ -186,7 +200,7 @@ html,body{
         width:90%;
     }
     .heading{
-        font-size: 200%;
+        font-size: 240%;
         margin-top: 5%;
     }
 }
@@ -196,7 +210,7 @@ html,body{
         height: 55%;
       }
       .heading{
-        font-size: 150%;
+        font-size: 200%;
         margin-top: 5%;
     }
 }

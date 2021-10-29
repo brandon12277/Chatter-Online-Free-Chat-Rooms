@@ -5,6 +5,7 @@ const app=express();
 
 const server = require('http').createServer(app);
 const {Server}= require("socket.io")
+const port=process.env.PORT || 3000;
 const io = new Server(server,{
     cors:{
     origin:"http://localhost:3000/",
@@ -18,8 +19,6 @@ const ejs=require("ejs");
 const { urlencoded } = require("body-parser");
 const url=require("url");
 const { RSA_PKCS1_PADDING } = require("constants");
-
-const port=3000;
 
 app.use(express.static("static"));
 app.use(bodyParser.urlencoded({extended:false}));
