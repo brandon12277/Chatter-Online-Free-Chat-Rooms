@@ -21,7 +21,7 @@ document.getElementById("name_enter").addEventListener("submit",e=>{
    document.getElementById("message-field").style.display="flex";
    socket.emit("new_user",roomName,user);
    displayName("You");
-   user_disconnected(names,"connected","center","#90EE90","#ED2939");
+   user_disconnected("You","connected","center","#90EE90","#ED2939");
 })
 
 // displayName("You","joined","left","#ece5dd","#ED2939")

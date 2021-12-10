@@ -5,7 +5,7 @@ const app=express();
 
 const server = require('http').createServer(app);
 const {Server}= require("socket.io")
-const port=process.env.PORT || 3000 || 8443;
+const port=process.env.PORT || 3000;
 const io = new Server(server,{
     cors:{
     origin:"https://chatterwebapp.herokuapp.com/",
@@ -76,7 +76,6 @@ app.post("/joinRoom",(req,res)=>{
 //Web Sockets for chat app
 
 io.on('connection',socket=>{
-         
          socket.on("new_user",(room,name)=>{
              socket.join(room)
              rooms[room].users[socket.id]=name;
@@ -101,7 +100,6 @@ io.on('connection',socket=>{
             })
                 socket.to(room).emit("user-disconnected",rooms[room].users[socket.id],names);
                 delete rooms[room].users[socket.id];
-                if(Object.keys(rooms[req.body.room].users)==0)delete rooms[room];
                
             })
            
