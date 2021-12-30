@@ -17,8 +17,8 @@ html,body{
     
 }
 .logo{
-  width:15%;
-  height: 15%;
+  width:12%;
+  height: 12%;
 }
 .d-flex{
     z-index:1;
@@ -210,4 +210,10 @@ html,body{
         font-size: 200%;
         margin-top: 5%;
     }
+}
+@media (max-width: 400px){
+    .logo{
+        width:45%;
+        height: 45%;
+      }
 }
