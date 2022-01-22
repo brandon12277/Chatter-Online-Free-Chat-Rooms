@@ -100,6 +100,7 @@ io.on('connection',socket=>{
             })
                 socket.to(room).emit("user-disconnected",rooms[room].users[socket.id],names);
                 delete rooms[room].users[socket.id];
+                if(Object.keys(rooms[room].users)==0)delete rooms[room];
                
             })
            

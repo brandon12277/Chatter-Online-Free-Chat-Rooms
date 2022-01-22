@@ -7,6 +7,7 @@ html,body{
     background-attachment: fixed;
     margin: 0;
     padding:0;
+    overflow: hidden;
     
 }
 .home{
@@ -44,9 +45,10 @@ html,body{
     color:white;
     margin-top:5%;
     margin-left: 2%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0px 3px 2px black;
+    
+    text-shadow: 0px 2px 1px black;
     z-index:1;
+   
     
 }
 .create,.join{
@@ -65,6 +67,22 @@ html,body{
    animation-duration: 2s;
     animation-name: glow;
     animation-iteration-count: infinite;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.below_img{
+    width:20%;
+    height:auto;
+    border-radius: 50%;
+    z-index:2;
 }
 
 @keyframes glow{
@@ -91,31 +109,29 @@ html,body{
     text-align:center;
     margin-top:3%;
     width:70%;
+    font-size: 170%;
+    font-family: 'Dongle', sans-serif;
 
 }
-.custom-shape-divider-bottom-1634822811 {
-    position: fixed;
+.custom-shape-divider-bottom-1642854229 {
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    margin: 0;
-    padding:0;
     transform: rotate(180deg);
-
 }
 
-.custom-shape-divider-bottom-1634822811 svg {
+.custom-shape-divider-bottom-1642854229 svg {
     position: relative;
     display: block;
-    width: calc(202% + 1.3px);
-    height: 383px;
-    transform: rotateY(180deg);
+    width: calc(300% + 1.3px);
+    height: 299px;
 }
 
-.custom-shape-divider-bottom-1634822811 .shape-fill {
-    fill: #b5bf50;
+.custom-shape-divider-bottom-1642854229 .shape-fill {
+    fill: #eaff00;
 }
 /** For mobile devices **/
 @media (max-width: 767px) {
@@ -172,8 +188,8 @@ html,body{
 
 @media (max-width: 600px){
     .logo{
-        width:30%;
-        height: 30%;
+        width:25%;
+        height: 25%;
       }
       .fas{
         color: white;
@@ -203,17 +219,11 @@ html,body{
 }
 @media (max-width: 500px){
     .logo{
-        width:40%;
-        height: 40%;
+        width:30%;
+        height: 30%;
       }
       .heading{
         font-size: 200%;
         margin-top: 5%;
     }
-}
-@media (max-width: 400px){
-    .logo{
-        width:45%;
-        height: 45%;
-      }
 }
