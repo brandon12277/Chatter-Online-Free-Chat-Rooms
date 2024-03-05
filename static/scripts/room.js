@@ -1,5 +1,5 @@
 
-const socket=io.connect("https://chatterwebapp.herokuapp.com")
+const socket=io.connect("https://chatrooms-7orn.onrender.com")
 let message_sender=document.getElementById("send_message");
 let messageInput=document.getElementById("message");
 let message_container=document.getElementById("text_block")

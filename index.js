@@ -8,7 +8,7 @@ const {Server}= require("socket.io")
 const port=process.env.PORT || 3000;
 const io = new Server(server,{
     cors:{
-    origin:"https://chatterwebapp.herokuapp.com/",
+    origin:"https://chatrooms-7orn.onrender.com/",
     methods:["GET","POST"]
     }
 })
